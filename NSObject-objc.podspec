@@ -1,42 +1,19 @@
-#
-# Be sure to run `pod lib lint NSObject-objc.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
-  s.name             = 'NSObject-objc'
-  s.version          = '0.0.1'
-  s.summary          = 'wrap up objc runtime'
+  s.name     = 'NSObject-objc'
+  s.version  = '0.0.2'
+  s.license  = 'MIT'
+  s.summary  = 'a wrraper for objc runtime'
+  s.homepage = 'https://github.com/xuwenquan/NSObject-objc'
+  s.author   = 'xuwenquan'
+  s.source   = { :git => 'https://github.com/xuwenquan/NSObject-objc.git', :tag => "v#{s.version}" }
+  s.requires_arc = false
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description = %{
+    wrap up obj runtime code for easy use
+  }
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.source_files = 'NSObject-objc/NSObject-objc/*.{h,m}'
 
-  s.homepage         = 'https://github.com/xuwenquan/NSObject-objc'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xuwenquan.id@gmail.com' => 'xxxoo' }
-  s.source           = { :git => 'https://github.com/xuwenquan/NSObject-objc.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'NSObject-objc/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NSObject-objc' => ['NSObject-objc/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '9.0'
+  #s.swift-version = '4.1'
 end

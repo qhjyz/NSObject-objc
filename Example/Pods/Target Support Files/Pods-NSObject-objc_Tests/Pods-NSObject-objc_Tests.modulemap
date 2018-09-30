@@ -1,6 +1,0 @@
-framework module Pods_NSObject_objc_Tests {
-  umbrella header "Pods-NSObject-objc_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
