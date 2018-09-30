@@ -1,0 +1,6 @@
+framework module NSObject_objc {
+  umbrella header "NSObject-objc-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'NSObject-objc_Tests' do
+  pod 'NSObject-objc', :path => '../'
+  
+  
+end
