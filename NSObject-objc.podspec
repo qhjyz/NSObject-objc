@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'NSObject-objc'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.license  = 'MIT'
   s.summary  = 'a wrraper for objc runtime'
   s.homepage = 'https://github.com/xuwenquan/NSObject-objc'
   s.author   = 'xuwenquan'
-  s.source   = { :git => 'https://github.com/xuwenquan/NSObject-objc.git', :tag => "v#{s.version}" }
+  s.source   = { :git => 'https://github.com/xuwenquan/NSObject-objc.git', :tag => "#{s.version}" }
   s.requires_arc = false
 
   s.description = %{
